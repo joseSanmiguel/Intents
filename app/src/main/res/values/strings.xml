@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Intents</string>
+    <string name="telefono">Telefono:</string>
+    <string name="coloque_aqui_su_nombre">Coloque aqui su nombre</string>
+    <string name="apellido">Apellido:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="coloque_aqui_su_apellido">Coloque aqui su Apellido</string>
+    <string name="coloque_aqui_su_numero_telefonico">Coloque aqui su numero Telefonico</string>
 </resources>
