@@ -9,4 +9,10 @@
     <string name="no_tienes_respuestas_aun">No tienes respuestas aun</string>
     <string name="confirmacion_de_recibido">Confirmacion de recibido:</string>
     <string name="enviar_informacion">Enviar informacion</string>
+    <string name="tu_nombre_es">Tu nombre es:</string>
+    <string name="tu_apellido_es">Tu Apellido es:</string>
+    <string name="tu_numero_telefonico_es">Tu Numero Telefonico es:</string>
+    <string name="cual_es_el_nuevo_mensaje">Cual es el nuevo mensaje?</string>
+    <string name="escribe_el_mensaje_nuevo">Escribe el mensaje nuevo</string>
+    <string name="atras">Atras</string>
 </resources>

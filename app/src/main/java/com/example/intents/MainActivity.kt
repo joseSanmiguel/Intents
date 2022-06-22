@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.intents.databinding.ActivityMainBinding
 
-private lateinit var binding: ActivityMainBinding
+
 const val EXTRA_MESSAGE = "com.example.intents.MESSAGE"
 class MainActivity : AppCompatActivity() {
 
+    //call view binding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -17,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         //call function sendMessage() after click on button.
         binding.button.setOnClickListener{sendMessage()}
     }
-
+    //function to make and intent which has information to send to another Activity
     private fun sendMessage(){
         val campo = binding.etNombre
         val message = campo.text.toString()
