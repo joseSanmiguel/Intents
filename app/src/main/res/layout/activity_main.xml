@@ -60,6 +60,8 @@
 
     <Button
         android:id="@+id/button"
+        android:background="@color/button_text"
+        android:textColor="@color/button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enviar_informacion" />
