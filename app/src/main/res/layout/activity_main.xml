@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -62,19 +62,19 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar informacion" />
+        android:text="@string/enviar_informacion" />
 
     <TextView
         android:id="@+id/confirmacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirmacion de recibido:" />
+        android:text="@string/confirmacion_de_recibido" />
 
     <TextView
         android:id="@+id/tvconfirmacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No tienes respuestas aun" />
+        android:text="@string/no_tienes_respuestas_aun" />
 
 
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
