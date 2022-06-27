@@ -6,26 +6,30 @@ import android.os.Bundle
 import com.example.intents.databinding.ActivityMainBinding
 
 
-const val EXTRA_MESSAGE = "com.example.intents.MESSAGE"
 class MainActivity : AppCompatActivity() {
 
-    //call view binding
+    //llamamos el view binding
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        //call function sendMessage() after click on button.
+        //llamamos la funcion sendMessage() despues de cliquear el boton
         binding.button.setOnClickListener{sendMessage()}
+        //cargamos los datos que provienen de la segunda activity
+        val newRespuesta = intent.getStringExtra("respuesta")
+        binding.tvconfirmacion.apply { text = newRespuesta }
     }
-    //function to make and intent which has information to send to another Activity
+    //hacemos una funcion para el intent que es donde almacenamos los datos que queremos pasar
     private fun sendMessage(){
-        val campo = binding.etNombre
-        val message = campo.text.toString()
+        val nombre = binding.etNombre.text.toString()
+        val apellido = binding.etApellido.text.toString()
+        val telefono = binding.etTelefono.text.toString()
         val intent = Intent(this, DisplayMessageActivity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, message)
-        }
+        putExtra("mNombre", nombre)
+        putExtra("mApellido", apellido)
+        putExtra("mTelefono", telefono)}
+        //llamamos la variable intent que es la que nos llevara a la siguiente Activity segun el intent
         startActivity(intent)
     }
 }
